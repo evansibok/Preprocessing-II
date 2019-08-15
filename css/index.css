@@ -168,6 +168,35 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 2rem 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-con h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.nav-con nav {
+  margin: 0 auto;
+}
+.nav-con nav ul {
+  display: flex;
+}
+.nav-con nav ul li {
+  margin-right: 2em;
+}
+.nav-con nav ul li a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
