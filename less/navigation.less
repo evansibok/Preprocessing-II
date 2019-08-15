@@ -5,10 +5,19 @@
 	padding: 2rem 0;
 	border-bottom: 2px dashed @navigation-border;
 
+	@media (@mobile){
+		padding: 2rem 0 1rem;
+	}
+
 	.placement {
 		margin: 0 auto;
 		max-width: 800px;
 		.flex-alignment(space-between, center);
+
+		@media (@mobile){
+			display: flex;
+			flex-direction: column;
+		}
 
 		h1 {
 			font-weight: bold;
@@ -16,16 +25,27 @@
 		}
 
 		nav {
+
+			@media (@mobile){
+				padding-top: 1.5rem;
+			}
+
 			ul {
 				display: flex;
+
+				
 				li {
 					padding-right: 2.5em;
+
+					@media (@mobile){
+						padding: 0 3em 0 3em;
+					}
 
 					a {
 						text-decoration: none;
 						color: @shark;
 						font-size: 1.4rem;
-						font-weight: 500;
+						font-weight: semi-bold;
 						letter-spacing: 0.1rem;
 					}
 				}
