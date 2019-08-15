@@ -5,16 +5,15 @@
 	padding: 2rem 0;
 	border-bottom: 2px dashed @navigation-border;
 
-	@media (@mobile){
-		padding: 2rem 0 1rem;
+	@media (@mobile) {
+		padding-bottom: 0px;
 	}
-
 	.placement {
 		margin: 0 auto;
 		max-width: 800px;
 		.flex-alignment(space-between, center);
 
-		@media (@mobile){
+		@media (@mobile) {
 			display: flex;
 			flex-direction: column;
 		}
@@ -25,20 +24,18 @@
 		}
 
 		nav {
-
-			@media (@mobile){
+			@media (@mobile) {
 				padding-top: 1.5rem;
 			}
 
 			ul {
 				display: flex;
 
-				
 				li {
 					padding-right: 2.5em;
 
-					@media (@mobile){
-						padding: 0 3em 0 3em;
+					@media (@mobile) {
+						padding: 1em 3em;
 					}
 
 					a {
