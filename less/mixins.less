@@ -1,1 +1,22 @@
 // Mixins in here
+
+.flex-alignment(@justify, @align) {
+	display: flex;
+	align-items: @align;
+	justify-content: @justify;
+}
+
+.btn-font-property(@font-s, @font-w, @align-center) {
+	font-size: @font-s;
+	font-weight: @font-w;
+	text-align: @align-center;
+}
+
+.btn-body-property(@btn-width, @button-bg, @color, @pad,
+  @border-rad) {
+	width: @btn-width;
+	background-color: @button-bg;
+	color: @color;
+	padding: @pad;
+	border-radius: @border-rad;
+}
